@@ -18,7 +18,25 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
+      .signature {
+        position: absolute;
+        left: 24px;
+        top: 12px;
+        font-size: 0.9em;
+        color: lightblue;
+
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      @media (max-width: 1148px) {
+        .signature {
+          color: darkcyan;
+          z-index: 10;
+        }
+      }
     </style>
+    <div class="signature">&copy; dvinubius 2020</div>
     <script src="../../lib/p5.min.js"></script>
     <script src="../../lib/utils.js"></script>
     <script src="../../lib/forms.js"></script>
